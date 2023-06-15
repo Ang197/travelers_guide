@@ -1,0 +1,150 @@
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Traveler's Guide</title>
+    </head>
+    
+    <body style="background-image: url(imgs/genshin_background.jpg)">
+        <div id="html-container">
+                <div id="content-wrapper">
+                
+                    <!--Buttons-->
+                    <input type="checkbox" id="check">
+                    <label for="check">
+                        <i class="fa fa-bars" id="btn"></i>
+                        <i class="fa fa-times" id="cancel"></i>
+                    </label>
+
+                    <!--Sidebar-->
+                    <section class ="sidebarClass">
+                        <header>Traveler's Guide</header>
+                        <ul>
+                            <li>
+                                <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" id="about-btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclamation-circle" viewBox="0 0 16 16">
+                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                        <path d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 4.995z"/>
+                                    </svg>
+                                    About
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal" id="characters-btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                                        <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                                    </svg>
+                                    Characters
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal" id="weapons-btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-hourglass" viewBox="0 0 16 16">
+                                        <path d="M2 1.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-1v1a4.5 4.5 0 0 1-2.557 4.06c-.29.139-.443.377-.443.59v.7c0 .213.154.451.443.59A4.5 4.5 0 0 1 12.5 13v1h1a.5.5 0 0 1 0 1h-11a.5.5 0 1 1 0-1h1v-1a4.5 4.5 0 0 1 2.557-4.06c.29-.139.443-.377.443-.59v-.7c0-.213-.154-.451-.443-.59A4.5 4.5 0 0 1 3.5 3V2h-1a.5.5 0 0 1-.5-.5zm2.5.5v1a3.5 3.5 0 0 0 1.989 3.158c.533.256 1.011.791 1.011 1.491v.702c0 .7-.478 1.235-1.011 1.491A3.5 3.5 0 0 0 4.5 13v1h7v-1a3.5 3.5 0 0 0-1.989-3.158C8.978 9.586 8.5 9.052 8.5 8.351v-.702c0-.7.478-1.235 1.011-1.491A3.5 3.5 0 0 0 11.5 3V2h-7z"/>
+                                    </svg>
+                                    Weapons
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://genshin.hoyoverse.com/en/" target="_blank">
+                                    Genshin Impact
+                                </a>
+                            </li>
+                        </ul>
+                        <img src="imgs/klee_fallen.png" id="kleeEl">
+                    </section>
+
+                    <!-- Header -->
+                    <section class="travlerHeader">
+                        <div class="headerWrapper">
+                            <img src = "imgs/Heros_Wit.png">
+                            <div>Traveler's Guide</div>
+                        </div>
+                    </section>
+
+                    <!--Main contents-->
+                    <main role="main-page" class="main-page-outer-wrapper">
+                        <section class="main-content"> 
+                            <div class="pagination-wrapper">
+                                <header class="item-preview">Latest Genshin Events</header>
+                                
+                                <div id="carouselTarget" class="carousel slide" data-bs-ride="carousel">
+
+                                    <!--Indicators-->
+                                    <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#carouselTarget" data-bs-slide-to="0" class="active"></button>
+                                        <button type="button" data-bs-target="#carouselTarget" data-bs-slide-to="1" ></button>
+                                        <button type="button" data-bs-target="#carouselTarget" data-bs-slide-to="2" ></button>
+                                        <button type="button" data-bs-target="#carouselTarget" data-bs-slide-to="3" ></button>
+                                    </div>
+
+                                    <!--Carousel items-->
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src ="imgs/genshin-banner-example.png" class="d-block">
+                                        </div>
+                                
+                                        <div class="carousel-item">
+                                            <img src="imgs/genshin-banner-example2.png" class="d-block">
+                                        </div>
+                                    
+                                        <div class="carousel-item">
+                                            <img src="imgs/genshin-banner-example3.png" class="d-block">
+                                        </div>
+
+                                        <div class="carousel-item">
+                                            <a href="https://www.youtube.com/watch?v=Y6kxqA8qxfU" target="_blank">
+                                                <img src="imgs/genshin-banner-example4.png" class="d-block">
+                                            </a>
+                                        </div>
+                                    </div>
+                         
+
+                                    <div class="arrow-buttons">
+                                        <button class="carousel-control-prev" href="#carouselTarget" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon"></span>
+                                        </button>
+                                        <button class="carousel-control-next" href="#carouselTarget" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon"></span>
+                                        </button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </section>
+                    </main>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">
+
+                                </h1>
+                            </div>
+                            <div class="modal-body" id="modalContent">
+                                
+                            </div>
+                            <div class="modal-footer">
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    
+                    <!--Darken overlay-->
+                    <div id="overlay"></div>
+
+                    <!--Scripts-->
+                    <script src="index.js"></script>
+                    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+                </div>
+        </div>
+    </body>
+</html>

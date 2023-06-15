@@ -1,0 +1,201 @@
+body{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 550px;
+    overflow-y: hidden;
+}
+
+@font-face {
+    font-family: Genshin;
+    src: url("genshin_font/Genshin\ Impact\ DRIP\ FONT.ttf");
+}
+
+#html-container{
+    min-width: 550px;
+    min-height: auto;
+}
+
+.arrow-buttons button{
+    border: none;
+    cursor: pointer;
+}
+
+.main-page-outer-wrapper{
+    background-color: rgb(255, 255, 255);
+    border-left-color: rgba(0, 48, 182, 0.479);
+    border-radius: 5px;
+    margin-top: 10px;
+    max-width: 445px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.item-preview{
+    margin-top:10px;
+    font-size: 14px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align:center;
+    border-bottom: 0.5px solid rgb(234, 234, 234);
+}
+
+.carousel-item img{
+    width:100%;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom:10px;
+}
+
+.headerWrapper{
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.travlerHeader{
+    display: block;
+    height: 40px;
+    background: #122246;
+    overflow: visible;
+    z-index: -10px;
+}
+
+.headerWrapper div{
+    font-family: Genshin;
+    font-size: 15px;
+    padding: 12px 0;
+    color: white;
+}
+
+.headerWrapper img{
+   float:left;
+   padding: 8px 0;
+   width:6%;
+   object-fit:cover;
+   object-position:100% 100%;
+}
+
+.sidebarClass header{
+  font-size: 14px;
+  position: relative;
+  margin-bottom: 10px;
+  font-family: 'Genshin';
+}
+
+.sidebarClass{
+    position: fixed;
+    font-size: 13px;
+    left: -250px;
+    width: 170px;
+    height: 100%;
+    bottom: 0;
+    background: rgb(0, 121, 158);
+    z-index: 10;
+    transition: all .2s ease;
+    color: white;
+    overflow: none;
+}
+
+.sidebarClass header{
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    background:rgb(0, 87, 113);
+}
+
+#kleeEl{
+   width:100%;
+   object-fit:cover;
+   object-position:100% 100%;
+}
+
+.sidebarClass ul a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    height: 100%;
+    width: 100%;
+    line-height: 35px;
+    color: white;
+    padding-left: 10px;
+    box-sizing: border-box;
+    transition: .1s;
+}
+
+.sidebarClass ul{
+    border-top: 0.05px solid grey;
+    border-bottom: 0.05px solid grey;
+}
+
+#extension-footer{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul li:hover a{
+    padding-left: 20px;
+}
+
+.sidebarClass ul a i{
+    margin-right: 16px;
+}
+
+#check{
+    position:relative;
+    display:none;
+}
+
+label #btn, label #cancel{
+    position:absolute;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+label #cancel{
+    position: fixed;
+    z-index: 111;
+    left: -105px;
+    top: 5px;
+    color: white;
+    padding: 4px 9px;
+    font-size:25px;
+}
+
+label #btn{
+    position: fixed;
+    left: 10px;
+    top: 2.5px;
+    font-size: 30px;
+    color: white;
+    transition: all .2s;
+}
+
+#check:checked ~ .sidebarClass{
+    left: 0;
+}
+
+#check:checked ~ label #btn{
+    opacity: 0;
+    pointer-events: none;
+}
+
+#check:checked ~ label #cancel{
+    left: 165px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+#overlay {
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    z-index: 3; /* Specify a stack order in case you're using a different order for other elements */
+    pointer-events: none;
+}
