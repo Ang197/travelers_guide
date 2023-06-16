@@ -15,7 +15,7 @@ Travler's Guide acts as a Google Chrome extension, and is an encylopedia of info
 
 Certain functions used from BootStrap 5 and SplideJS
 
-- [BootStrap]([url](https://getbootstrap.com/))
+- [BootStrap](https://getbootstrap.com/)
 - [SplideJS](https://splidejs.com/)
 
 # License
