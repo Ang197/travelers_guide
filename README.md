@@ -4,11 +4,10 @@ Travler's Guide acts as a Google Chrome extension, and is an encylopedia of info
 
 # Installation
 
-1. ![image](https://github.com/Ang197/travelers_guide/assets/32147504/59e8babf-66ab-432f-8fa5-9559948a36f6)
-    Clone the repository to your local device through Git Bash using $ git clone ("https link from Github repository")
-2. ![image](https://github.com/Ang197/travelers_guide/assets/32147504/2786db4b-ae17-4dfd-9796-32584dcf7ece) Open Chrome and click on your Chrome extension icon.
-3. ![image](https://github.com/Ang197/travelers_guide/assets/32147504/4864911c-db69-466e-a3e9-31d98e072c34) Click on manage extensions
-4. ![image](https://github.com/Ang197/travelers_guide/assets/32147504/27b523fa-8956-4405-8a31-b6da1c72de3f) Click on load unpacked.
+1. Clone the repository to your local device through Git Bash using $ git clone ("https link from Github repository")
+2. Open Chrome and click on your Chrome extension icon.
+3. Click on manage extensions
+4. Click on load unpacked.
 5. Select the location of the repistory folder and the extension will be shown on your list of extensions.
 
 # Credits
