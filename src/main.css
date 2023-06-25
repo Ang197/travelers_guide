@@ -293,6 +293,7 @@
 }
 
 .modal-title {
+  margin-top: 7px;
   margin-bottom: 0;
   line-height: var(--bs-modal-title-line-height);
 }

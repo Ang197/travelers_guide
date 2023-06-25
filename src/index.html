@@ -21,7 +21,7 @@
                     </label>
 
                     <!--Sidebar-->
-                    <section class ="sidebarClass">
+                    <section class ="sidebarClass" id="sideBar">
                         <header>Traveler's Guide</header>
                         <ul>
                             <li>
@@ -124,12 +124,15 @@
                         <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h1 class="modal-title fs-5" id="exampleModalLabel">
-
+                                <h1 class="modal-title fs-5" id="modalLabel">
                                 </h1>
+                                <div class="search-container">
+                                    <input type="text" class="textInput" placeholder="Search..." name="search">
+                                </div>
                             </div>
                             <div class="modal-body" id="modalContent">
-                                
+                                <div id="modalDescription"></div>
+                                <img id="modalImage">
                             </div>
                             <div class="modal-footer">
                             </div>
@@ -138,7 +141,7 @@
                     </div>
                     
                     <!--Darken overlay-->
-                    <div id="overlay"></div>
+                    <div class="overlay"></div>
 
                     <!--Scripts-->
                     <script src="index.js"></script>

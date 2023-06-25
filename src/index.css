@@ -180,13 +180,44 @@ label #btn{
     left: 165px;
 }
 
+#modalImage{
+    width:50%;
+    object-fit: cover;
+    -webkit-transform: translate(50%);
+    transform: translate(50%);
+}
+
+.modal-header{
+    background-image: url(imgs/modalHeaderBackgrounds/genshin-modal-header-1.jpg);
+    background-size: cover;
+    color: white;
+    padding-bottom: 40px;
+}
+
+.modal-header .search-container{
+    float: right;
+}
+
+.modal-header input[type=text]{
+    padding: 3px;
+    margin-top: 9px;
+    font-size: 12px;
+    background-color: rgb(240, 240, 240);
+    border: none;
+    border-radius: 3px;
+}
+
+.modal-header input:focus{
+    outline: none;
+}
+
 *{
     margin: 0;
     padding: 0;
     text-decoration: none;
 }
 
-#overlay {
+.overlay {
     position: fixed; /* Sit on top of the page content */
     display: none; /* Hidden by default */
     width: 100%; /* Full width (cover the whole page) */
@@ -197,5 +228,4 @@ label #btn{
     bottom: 0;
     background-color: rgba(0,0,0,0.5); /* Black background with opacity */
     z-index: 3; /* Specify a stack order in case you're using a different order for other elements */
-    pointer-events: none;
 }
