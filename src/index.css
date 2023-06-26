@@ -187,6 +187,11 @@ label #btn{
     transform: translate(50%);
 }
 
+#modalLabel{
+    padding-top:12px;
+    margin-left:6px;
+}
+
 .modal-header{
     background-image: url(imgs/modalHeaderBackgrounds/genshin-modal-header-1.jpg);
     background-size: cover;
@@ -195,6 +200,7 @@ label #btn{
 }
 
 .modal-header .search-container{
+    margin-top:8px;
     float: right;
 }
 
